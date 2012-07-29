@@ -1,0 +1,433 @@
+/*--------------------------------------------------------------------------------------------
+*
+*	Global
+*
+*--------------------------------------------------------------------------------------------*/
+
+/* Image Replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; font-size: 0; line-height: 0; }
+input.ir { border: 0 none; background: none; }
+
+
+/* Horizontal List */
+.hl { padding: 0; margin: 0; list-style: none; display: block; position: relative; }
+.hl > li { float: left; display: block; margin: 0; padding: 0; }
+.hl > li.right { float: right; }
+
+.hl.center { position: relative; overflow: visible; left: 50%; float: left; }
+.hl.center > li { position: relative; left: -50%; }
+
+
+/* Block List */
+.bl { padding: 0; margin: 0; list-style: none; display: block; position: relative; }
+.bl > li { display: block; margin: 0; padding: 0; float: none; }
+
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.my-loading {
+	background: url("../../../../wp-admin/images/wpspin_light.gif") no-repeat scroll 50% 50% #EAEAEA;
+    border-radius: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset;
+    height: 16px;
+    margin: 10px auto;
+    padding: 6px;
+    width: 16px;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+*
+*	WP Box
+*
+*--------------------------------------------------------------------------------------------*/
+
+.wp-box {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.wp-box .inner {
+    padding: 10px;
+}
+.wp-box .footer {
+	background-color: #8CC1E9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8CC1E9), to(#72A7CF)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #8CC1E9, #72A7CF); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #8CC1E9, #72A7CF); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #8CC1E9, #72A7CF); /* Opera 11.10+ */
+    background-image:         linear-gradient(to bottom, #8CC1E9, #72A7CF); /* Firefox 16+ */
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+.wp-box .footer ul.left {
+    float: left;
+}
+.wp-box .footer ul li {
+    margin: 0;
+    padding: 0;
+}
+.wp-box .footer ul.left li {
+    margin-right: 10px;
+}
+.wp-box .footer ul.right {
+    float: right;
+}
+.wp-box .footer ul.right li {
+    margin-left: 10px;
+}
+
+.wp-box .footer ul li a {
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.wp-box h2 {
+	margin: .25em 0 .75em;
+	padding: 0;
+}
+
+.wp-box h3 {
+	margin: 1.5em 0 0;
+}
+
+.wp-box p {
+	margin-top: 0.5em;
+}
+
+.wp-box .header {
+	background: #f9f9f9;
+	border-bottom: 1px solid #F0F0F0;
+	padding: 10px;
+}
+
+.wp-box .header h3 {
+	margin: 0;
+	padding: 0;
+}
+
+/*--------------------------------------------------------------------------------------------
+*
+*	Buttons
+*
+*--------------------------------------------------------------------------------------------*/
+
+a.scd-button,
+input[type="submit"].scd-button {
+	display: block;
+	border-radius: 4px;
+	background: #2c8bbe;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c8bbe', endColorstr='#246f99'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#2c8bbe), to(#246f99)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #2c8bbe, #246f99); /* for firefox 3.6+ */
+    color: #FFFFFF;
+    font-weight: normal;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    font-size: 13px;
+    line-height: 1em;
+    padding: 6px 11px;
+	border: 0 none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+
+a.scd-button:hover,
+input[type="submit"].scd-button:hover {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	background: #3b97c9;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b97c9', endColorstr='#246f99'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#3b97c9), to(#246f99)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #3b97c9, #246f99); /* for firefox 3.6+ */
+}
+
+a.scd-button:active,
+input[type="submit"].scd-button:active {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	top: 1px;
+	
+}
+
+a.scd-button.grey,
+input[type="submit"].scd-button.grey {
+	text-shadow: 0 1px 0 #fff;
+	color: #454545;
+	background: #fff;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#ffffff', endColorstr='#ececec'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ececec)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #fff, #ececec); /* for firefox 3.6+ */
+	
+}
+
+
+/*--------------------------------------------------------------------------------------------
+*
+*	Options Page
+*
+*--------------------------------------------------------------------------------------------*/
+
+h3.h2 {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 29px;
+    margin: 0;
+    padding: 9px 15px 4px 0;
+}
+
+h3.h2 span {
+    color: #CCCCCC;
+}
+
+
+/*
+*  Columns
+*/
+
+#shortcode-developer {
+	padding-top: 15px;
+}
+
+#shortcode-developer .col-side {
+	float: right;
+    width: 281px;
+}
+
+#shortcode-developer .col-main {
+	margin-right: 300px;
+}
+
+#shortcode-developer .float-wrap {
+	position: relative;
+	width: 100%;
+	float: left;
+}
+
+
+/*
+*  List
+*/
+
+#shortcode-list {
+	
+}
+
+.list-header {
+	
+}
+
+.scd-widefat {
+	background: transparent;
+	border-radius: 0;
+	border: 0 none;
+}
+
+.scd-widefat th {
+	padding: 7px 12px 8px;
+}
+
+.scd-widefat td {
+	padding: 10px 12px;
+}
+
+.list-empty-message {
+    padding: 16px 12px;
+    border-bottom: #DFDFDF solid 1px;
+}
+
+.list-footer {
+	position: relative;
+	overflow: hidden;
+	padding: 8px;
+	background: #EAF2FA;
+}
+
+.list-footer .scd-button{
+	display: block;
+    float: right;
+    margin: 0;
+}
+
+
+/*
+*  Single
+*/
+
+.scd-form {
+	border-collapse:separate;
+	border-spacing:0;
+	width: 100%;
+}
+
+.scd-form th.side-th {
+	background: #f9f9f9;
+	width: 150px;
+	border-right: 1px solid #E1E1E1;
+}
+
+.scd-form th.side-th,
+.scd-form td.main-td {
+	border-top: 1px solid #f0f0f0;
+	
+	text-align: left;
+	padding: 14px;
+	font-size: 12px;
+	line-height: 1.3em;
+	vertical-align: top;
+}
+
+.scd-form td.main-td {
+	border-top: 1px solid #f5f5f5;
+}
+
+.scd-form tr:first-child th.side-th,
+.scd-form tr:first-child td.main-td {
+	border-top: 0 none;
+}
+
+.scd-form th.side-th label {
+	display: block;
+	margin: 0 0 0.25em;
+}
+
+.scd-form th.side-th p {
+	color: #666666;
+    font-weight: normal;
+    margin: 0 0 0.5em;
+}
+
+.scd-form span.required {
+    color: #FF0000;
+    display: inline;
+    margin-right: 5px;
+}
+
+.scd-form input[type="text"],
+.scd-form textarea {
+    outline: medium none;
+    padding: 5px;
+    width: 99.95%;
+}
+
+.scd-form input[type="text"]:focus,
+.scd-form textarea:focus {
+    border-color: #98B6CB;
+}
+
+#publish {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.CodeMirror-scroll {
+	height: auto;
+}
+
+#form-php-body-wrapper .CodeMirror-scroll {
+	
+}
+
+#form-php-vars-wrapper {
+	border: #DFDFDF solid 1px;
+	border-bottom: 0 none;
+	border-radius: 3px 3px 0 0;
+}
+
+#form-php-body-wrapper {
+	border: #DFDFDF solid 1px;
+	border-top: 0 none;
+	border-bottom: 0 none;
+}
+
+#form-php-return-wrapper {
+	border: #DFDFDF solid 1px;
+	border-top: 0 none;
+	border-radius: 0 0 3px 3px;
+}
+
+#form-php-vars-wrapper .CodeMirror,
+#form-php-return-wrapper .CodeMirror {
+	background: #fcfcfc;
+}
+
+
+
+#form-php-vars-wrapper .CodeMirror-gutter-text {
+	display: none;
+}
+
+#form-php-return-wrapper .CodeMirror-gutter-text {
+	display: none;
+}
+
+.delete-shortcode {
+	color: #BC0B0B;
+	text-decoration: none;
+}
+
+.delete-shortcode:hover {
+	color: #f00;
+}
+
+#shortcode-atts td {
+	position: relative;
+}
+
+#shortcode-atts td:first-child,
+#shortcode-atts th:first-child {
+	padding-right: 6px;
+}
+#shortcode-atts td:last-child,
+#shortcode-atts th:last-child {
+	padding-left: 6px;
+}
+
+#shortcode-atts .delete-attribute {
+	border-radius: 0 3px 3px 0;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 25px;
+    margin-top: 1px;
+    position: absolute;
+    right: -24px;
+    text-align: center;
+    width: 24px;
+    
+    
+    background-color: #464646;
+    background-image: -webkit-gradient(linear, left center, right center, from(#373737), to(#464646)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(left, #373737, #464646); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(left, #373737, #464646); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(left, #373737, #464646); /* Opera 11.10+ */
+    background-image:         linear-gradient(to left, #373737, #464646); /* Firefox 16+ */
+    
+    display: none;
+}
+
+#shortcode-atts tr:hover .delete-attribute { 
+	display: block;
+}
+
+#shortcode-atts .delete-attribute:hover {
+	background-color: #e54e35;
+    background-image: -webkit-gradient(linear, left center, right center, from(#bc1b00), to(#e54e35)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(left, #bc1b00, #e54e35); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(left, #bc1b00, #e54e35); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(left, #bc1b00, #e54e35); /* Opera 11.10+ */
+    background-image:         linear-gradient(to left, #bc1b00, #e54e35); /* Firefox 16+ */
+	
+}
