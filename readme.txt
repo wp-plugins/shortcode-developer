@@ -9,11 +9,11 @@ Creating shortcodes has never been this easy! This plugin gives you full PHP con
 
 == Description ==
 
-The Shortcode Developer plugin provides a user firendly interface for creating custom shortcodes. Each shortcode consits of a name, a list of attibutes (with names and default values) and the PHP code executed to return the html back to the shortcode placeholder. 
+The Shortcode Developer plugin provides a user friendly interface for creating custom shortcodes. Each shortcode consists of a name, a list of attributes (with names and default values) and the PHP code executed to return the html back to the shortcode placeholder. 
 
 Editing the PHP code is powered by the great browser editor "CodeMirror"!
 
-A nice advantage of using this plugin over writing the shortcodes into the functions.php is that the shortcodes are not dependant on the theme. Also, this makes for a faster turn around for quick updates on live websites!
+A nice advantage of using this plugin over writing the shortcodes into the functions.php is that the shortcodes are not dependent on the theme. Also, this makes for a faster turn around for quick updates on live websites!
 
 = Tested on =
 * Mac Firefox 	:)
