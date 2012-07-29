@@ -3,7 +3,7 @@
 /*
 Plugin Name: Shortcode Developer
 Plugin URI: http://www.elliotcondon.com/
-Description: Quickly create and edit shortcodes to use within your website. This plugin gives you full PHP control whilst taking care of the hard work in the background. Creating shortcodes has never been this easy!
+Description: Creating shortcodes has never been this easy! This plugin gives you full PHP control whilst taking care of the hard work in the background.
 Version: 1.0.0
 Author: Elliot Condon
 Author URI: http://www.elliotcondon.com/

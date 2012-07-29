@@ -5,9 +5,7 @@ Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 3.3
 
-Quickly create and edit shortcodes to use within your website.
-This plugin gives you full PHP control whilst taking care of the hard work in the background.
-Creating shortcodes has never been this easy!
+Creating shortcodes has never been this easy! This plugin gives you full PHP control whilst taking care of the hard work in the background.
 
 == Description ==
 
@@ -34,6 +32,7 @@ Your votes really make a difference! Thanks.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Click on Settings -> Shortcode Developer to get started!
 
+
 == Frequently Asked Questions ==
 
 = Q. I see an error on my website such as "Parse error: syntax error, unexpected T_RETURN in .../shortcode-developer.php(127) : runtime-created function on line 1" =
@@ -44,6 +43,7 @@ A. There is a syntax error with one of your shortcodes PHP function.
 1. List of created shortcodes
 
 2. Shortcode add / edit interface
+
 
 == Changelog ==
 
